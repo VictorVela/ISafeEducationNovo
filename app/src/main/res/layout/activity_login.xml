@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cadastrar" />
+        app:layout_constraintTop_toBottomOf="@+id/atualizar" />
 
     <TextView
         android:id="@+id/textView"
@@ -26,13 +26,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="LOGIN"
-        app:layout_constraintBottom_toTopOf="@+id/edit_nomeAdministrador"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nomeDisciplina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit_nomeAdministrador"
+        android:id="@+id/edit_nomeDisciplina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -54,13 +54,13 @@
         android:ems="10"
         android:hint="Senha administrador"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/atualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nomeAdministrador" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_nomeDisciplina" />
 
     <Button
-        android:id="@+id/cadastrar"
+        android:id="@+id/atualizar"
         android:layout_width="119dp"
         android:layout_height="64dp"
         android:layout_marginStart="8dp"

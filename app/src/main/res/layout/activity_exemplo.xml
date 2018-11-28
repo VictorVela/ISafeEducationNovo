@@ -5,23 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.AdministradorActivity">
+    tools:context=".activity.ExemploActivity">
 
     <Button
-        android:onClick="novoAdministrador"
-        android:text="Novo Administrador"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:onClick="atualizarAdministrador"
-        android:text="Atualizar Administrador"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:onClick="excluirAdministrador"
-        android:text="Excluir Administrador"
+        android:onClick="novoExemplo"
+        android:text="Novo Disciplina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -29,9 +17,8 @@
         android:textSize="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista de Administradores:"
+        android:text="Lista de Disciplinas:"
         />
-
     <ListView
         android:id="@+id/listaAdministradores"
         android:layout_width="match_parent"

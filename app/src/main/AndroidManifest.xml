@@ -19,7 +19,11 @@
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.CadastroConsultaActivity" />
         <activity android:name=".activity.AdministradorActivity" />
-        <activity android:name=".activity.AdministradorCadastroActivity"></activity>
+        <activity android:name=".activity.AdministradorCadastroActivity" />
+        <activity android:name=".activity.ExemploActivity" />
+        <activity android:name=".activity.ExemploCadastroActivity" />
+        <activity android:name=".activity.AdministradorAtualizarActivity" />
+        <activity android:name=".activity.AdministradorExcluirActivity"></activity>
     </application>
 
 </manifest>

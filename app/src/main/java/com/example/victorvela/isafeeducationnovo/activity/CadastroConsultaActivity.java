@@ -22,7 +22,7 @@ public class CadastroConsultaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro_consulta);
 
         buttonSair          = findViewById(R.id.sair);
-        buttonAdministrador = findViewById(R.id.cadastrar);
+        buttonAdministrador = findViewById(R.id.atualizar);
         buttonExemplo       = findViewById(R.id.exemplo);
 
         /*

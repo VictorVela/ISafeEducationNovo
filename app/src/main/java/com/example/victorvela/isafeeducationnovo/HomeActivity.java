@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        buttonEntrar = findViewById(R.id.cadastrar);
+        buttonEntrar = findViewById(R.id.atualizar);
 
         buttonEntrar.setOnClickListener(new View.OnClickListener() {
             @Override

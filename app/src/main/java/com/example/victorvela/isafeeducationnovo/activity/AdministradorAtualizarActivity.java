@@ -11,9 +11,9 @@ import com.example.victorvela.isafeeducationnovo.model.Administrador;
 import com.example.victorvela.isafeeducationnovo.repository.AdministradorRepository;
 import com.example.victorvela.isafeeducationnovo.repository.Repository;
 
-public class AdministradorCadastroActivity extends AppCompatActivity {
+public class AdministradorAtualizarActivity extends AppCompatActivity {
 
-    private EditText editNomeAdministrador, editSenhaAdministrador;
+    private EditText editIdAdministrador, editNomeAdministrador, editSenhaAdministrador;
     private Repository repository;
     private Administrador administrador;
     private AdministradorRepository administradorRepository;
@@ -21,11 +21,12 @@ public class AdministradorCadastroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administrador_cadastro);
+        setContentView(R.layout.activity_administrador_atualizar);
 
         /**
-         * receber nome e senha da tela de cadastro
+         * receber idm nome e senha da tela de atualizar
          */
+        editIdAdministrador = findViewById(R.id.edit_id);
         editNomeAdministrador = findViewById(R.id.edit_nomeDisciplina);
         editSenhaAdministrador = findViewById(R.id.edit_senhaAdministrador);
 
@@ -34,17 +35,13 @@ public class AdministradorCadastroActivity extends AppCompatActivity {
 
     }
 
-    public void salvarAdministrador(View view){
-        administrador.setNomeAdministrador(editNomeAdministrador.getText().toString());
-        administrador.setSenhaAdministrador(editSenhaAdministrador.getText().toString());
-        //neste momento fazenmos uma chamada do repository que por fim chama o repository do administrador executando o insert
-        administradorRepository.insert(administrador);
+    public void atualizarAdministrador(View view){
+        //não esta atualizando ainda
         Toast.makeText(this, administrador.getNomeAdministrador(), Toast.LENGTH_SHORT).show();
+
     }
 
     public void teste(View view){
-        administrador.setNomeAdministrador(editNomeAdministrador.getText().toString());
-        administrador.setSenhaAdministrador(editSenhaAdministrador.getText().toString());
         Toast.makeText(this, administrador.getId() + " " + administrador.getNomeAdministrador() + " " + administrador.getSenhaAdministrador(), Toast.LENGTH_SHORT).show();
     }
 }
