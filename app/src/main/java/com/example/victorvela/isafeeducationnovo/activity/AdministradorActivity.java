@@ -25,10 +25,12 @@ public class AdministradorActivity extends AppCompatActivity implements AdapterV
 
     public void atualizarAdministrador(View view){
         Intent atualizarAdministrador = new Intent(AdministradorActivity.this, AdministradorAtualizarActivity.class);
+        startActivity(atualizarAdministrador);
     }
 
     public void excluirAdministrador(View view){
-        Intent atualizarAdministrador = new Intent(AdministradorActivity.this, AdministradorExcluirActivity.class);
+        Intent excluirAdministrador = new Intent(AdministradorActivity.this, AdministradorExcluirActivity.class);
+        startActivity(excluirAdministrador);
     }
 
     @Override

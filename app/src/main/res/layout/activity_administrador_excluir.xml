@@ -40,7 +40,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/blue"
         android:onClick="excluirAdministrador"
-        android:text="ATUALIZAR"
+        android:text="excluir"
         app:layout_constraintBottom_toTopOf="@+id/verificar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
