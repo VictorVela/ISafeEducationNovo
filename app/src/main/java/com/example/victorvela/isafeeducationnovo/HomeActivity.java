@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.victorvela.isafeeducationnovo.activity.LoginActivity;
+import com.facebook.stetho.Stetho;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -16,6 +17,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Stetho.initializeWithDefaults(getApplicationContext());
 
         buttonEntrar = findViewById(R.id.atualizar);
 

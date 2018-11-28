@@ -19,6 +19,11 @@ public class AdministradorRepository {
         mAdministradorDAO = db.administradorDAO();
     }
 
+    public List<Administrador> getAllAdministradores(){
+        mAdministradores = mAdministradorDAO.loadAdministradores();
+        return mAdministradores;
+    }
+
     /**
      * sistema de insert do repository
      */

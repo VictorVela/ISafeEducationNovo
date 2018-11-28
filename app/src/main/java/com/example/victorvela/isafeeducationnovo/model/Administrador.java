@@ -5,10 +5,10 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity(tableName = "TB_administrador", foreignKeys = {@ForeignKey(entity = Professor.class, parentColumns = "ID", childColumns = "professor_id"),
-        @ForeignKey(entity = Aluno.class, parentColumns = "ID", childColumns = "aluno_id")})
+//@Entity(tableName = "TB_administrador", foreignKeys = {@ForeignKey(entity = Professor.class, parentColumns = "ID", childColumns = "professor_id"),
+//        @ForeignKey(entity = Aluno.class, parentColumns = "ID", childColumns = "aluno_id")})
 
-//@Entity(tableName = "TB_administrador")
+@Entity(tableName = "TB_administrador")
 
 public class Administrador {
 
@@ -21,11 +21,11 @@ public class Administrador {
     private String nomeAdministrador;
     private String senhaAdministrador;
 
-    @ColumnInfo(name = "professor_id")
-    private long professorId;
-
-    @ColumnInfo(name = "aluno_id")
-    private long alunoId;
+//    @ColumnInfo(name = "professor_id")
+//    private long professorId;
+//
+//    @ColumnInfo(name = "aluno_id")
+//    private long alunoId;
 
     public Administrador(long id, String nomeAdministrador, String senhaAdministrador) {
         this.id = id;
@@ -64,19 +64,19 @@ public class Administrador {
         this.senhaAdministrador = senhaAdministrador;
     }
 
-    public long getProfessorId() {
-        return professorId;
-    }
-
-    public void setProfessorId(long professorId) {
-        this.professorId = professorId;
-    }
-
-    public long getAlunoId() {
-        return alunoId;
-    }
-
-    public void setAlunoId(long alunoId) {
-        this.alunoId = alunoId;
-    }
+//    public long getProfessorId() {
+//        return professorId;
+//    }
+//
+//    public void setProfessorId(long professorId) {
+//        this.professorId = professorId;
+//    }
+//
+//    public long getAlunoId() {
+//        return alunoId;
+//    }
+//
+//    public void setAlunoId(long alunoId) {
+//        this.alunoId = alunoId;
+//    }
 }

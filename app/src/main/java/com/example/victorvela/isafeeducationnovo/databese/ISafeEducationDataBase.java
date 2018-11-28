@@ -14,7 +14,7 @@ import com.example.victorvela.isafeeducationnovo.model.Aluno;
 import com.example.victorvela.isafeeducationnovo.model.Exemplo;
 import com.example.victorvela.isafeeducationnovo.model.Professor;
 
-@Database(entities = {Administrador.class, Professor.class, Aluno.class, Exemplo.class},version = 1)
+@Database(entities = {Administrador.class, Professor.class, Aluno.class, Exemplo.class},version = 4)
 public abstract class ISafeEducationDataBase extends RoomDatabase {
     private static volatile ISafeEducationDataBase INSTANCE;
     public abstract AdministradorDAO administradorDAO();
@@ -26,7 +26,7 @@ public abstract class ISafeEducationDataBase extends RoomDatabase {
         if(INSTANCE == null){
             synchronized (ISafeEducationDataBase.class){
                 if(INSTANCE == null){
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),ISafeEducationDataBase.class,"safe_database").allowMainThreadQueries().build();
+                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),ISafeEducationDataBase.class,"safe_database").allowMainThreadQueries().fallbackToDestructiveMigration().build();
                 }
             }
         }

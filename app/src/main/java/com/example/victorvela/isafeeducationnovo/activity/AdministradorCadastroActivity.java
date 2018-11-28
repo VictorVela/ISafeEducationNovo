@@ -39,7 +39,8 @@ public class AdministradorCadastroActivity extends AppCompatActivity {
         administrador.setSenhaAdministrador(editSenhaAdministrador.getText().toString());
         //neste momento fazenmos uma chamada do repository que por fim chama o repository do administrador executando o insert
         administradorRepository.insert(administrador);
-        Toast.makeText(this, administrador.getNomeAdministrador(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "inserido com sucesso", Toast.LENGTH_SHORT).show();
+        finish();
     }
 
     public void teste(View view){
