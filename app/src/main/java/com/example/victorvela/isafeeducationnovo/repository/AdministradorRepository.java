@@ -23,6 +23,7 @@ public class AdministradorRepository {
         mAdministradores = mAdministradorDAO.loadAdministradores();
         return mAdministradores;
     }
+    public void delete(Long id){mAdministradorDAO.delete(id);}
 
     /**
      * sistema de insert do repository

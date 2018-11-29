@@ -35,8 +35,9 @@ public class AdministradorExcluirActivity extends AppCompatActivity {
     }
 
     public void excluirAdministrador(View view){
-        //não esta atualizando ainda
-        Toast.makeText(this, administrador.getNomeAdministrador(), Toast.LENGTH_SHORT).show();
+        administrador.setId(Integer.parseInt(editIdAdministrador.getText().toString()));//pode ser que esteja errado
+        administradorRepository.delete(administrador.getId());
+        Toast.makeText(this, "excluido com sucesso", Toast.LENGTH_SHORT).show();
     }
     public void teste(View view){
         Toast.makeText(this, administrador.getId() + " " + administrador.getNomeAdministrador() + " " + administrador.getSenhaAdministrador(), Toast.LENGTH_SHORT).show();
